@@ -7,8 +7,8 @@
 using namespace Sophus;
 using namespace std;
 
-string groundtruth_file = "./example/groundtruth.txt";
-string estimated_file = "./example/estimated.txt";
+string groundtruth_file = "../groundtruth.txt";
+string estimated_file = "../estimated.txt";
 
 typedef vector<Sophus::SE3d, Eigen::aligned_allocator<Sophus::SE3d>> TrajectoryType;
 
@@ -100,3 +100,6 @@ void DrawTrajectory(const TrajectoryType &gt, const TrajectoryType &esti) {
   }
 
 }
+
+// add in Sophus CMakeLists.txt
+// set(CMAKE_CXX_FLAGS "-Wno-error=deprecated-declarations -Wno-deprecated-declarations ")
