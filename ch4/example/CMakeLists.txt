@@ -8,3 +8,6 @@ endif()
 include_directories(${Pangolin_INCLUDE_DIRS})
 add_executable(trajectoryError trajectoryError.cpp)
 target_link_libraries(trajectoryError ${Pangolin_LIBRARIES} ${FMT_LIBRARIES})
+
+message(STATUS "CMAKE_MODULE_PATH = ${CMAKE_MODULE_PATH}")
+message(STATUS "CMAKE_ROOT = ${CMAKE_ROOT}")
